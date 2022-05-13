@@ -519,11 +519,14 @@ button {
     right: 20px;
     opacity: 0;
     z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: all .3s ease-in-out;
 }
 
 .scrollToTop span {
-    margin-top: 6px;
+    color:#FFFFFF;
 }
 
 .showScrollTop {
@@ -754,7 +757,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #364577;
     padding: 40px 40px 40px 40px;
 }
 
@@ -776,7 +779,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:#FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -787,6 +790,15 @@ h4 {
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
+}
+.btn-dark-slate-blue {
+    background: #364577!important;
+    color: #FFFFFF!important;
+}
+.btn-dark-slate-blue:hover {
+    background: #FFFFFF!important;
+    color: #364577!important;
+    border-color: #364577!important;;
 }
 
 .ltc-white {
@@ -827,7 +839,16 @@ h4 {
 }
 footer a{
     margin-top: 1rem;
+    color:#FFFFFF!important;
 }
+blockquote {
+    font-style: italic;
+}
+figcaption{
+    color: #364577;
+    font-weight: bold;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
