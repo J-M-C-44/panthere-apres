@@ -478,6 +478,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    margin-top: 0.5rem;
 }
 
 .icon-lg {
@@ -838,11 +839,13 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 footer a{
-    margin-top: 1rem;
+    margin-top: 10rem;
     color:#FFFFFF!important;
 }
 blockquote {
     font-style: italic;
+    color: #575757!important;
+}
 }
 figcaption{
     color: #364577;
