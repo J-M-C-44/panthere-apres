@@ -133,7 +133,8 @@ a:hover {
 .d-bloc h4 a,
 .d-bloc h5 a,
 .d-bloc h6 a,
-.d-bloc p a {
+.d-bloc p a,
+.d-bloc .partenariat a{
     color: rgba(255, 255, 255, .6);
 }
 
@@ -150,7 +151,8 @@ a:hover {
 .d-bloc h4 a:hover,
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
-.d-bloc p a:hover {
+.d-bloc p a:hover,
+.d-bloc .partenariat a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -656,7 +658,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -765,6 +767,7 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+    text-decoration-color: #F3976C!important;
 }
 
 .bgc-white {
@@ -838,14 +841,7 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
 }
-footer a{
-    margin-top: 10rem;
-    color:#FFFFFF!important;
-}
-footer p{
-    margin-top: 1rem;
-    color:#FFFFFF!important;
-}
+
 blockquote {
     font-style: italic;
     color: #575757!important;
@@ -854,6 +850,14 @@ blockquote {
 figcaption{
     color: #364577;
     font-weight: bold;
+}
+
+.partenariat{
+    margin-top: 2rem;
+    color: #FFFFFF;
+}
+.partenariat li{
+    margin-top: 0.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -904,8 +908,8 @@ figcaption{
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -915,8 +919,8 @@ figcaption{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 }
 
@@ -1076,5 +1080,11 @@ figcaption{
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .social{
+        max-width: 300px;
     }
 }
