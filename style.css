@@ -846,7 +846,7 @@ blockquote {
     font-style: italic;
     color: #575757!important;
 }
-}
+
 figcaption{
     color: #364577;
     font-weight: bold;
@@ -910,10 +910,6 @@ figcaption{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -922,8 +918,6 @@ figcaption{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
     }
 }
 
@@ -1077,7 +1071,6 @@ figcaption{
     .bg-presentation {
         background-image: url("img/image-de-presentation-small.webp");
     }
-}
 }
 
 @media (max-width: 767px) {
